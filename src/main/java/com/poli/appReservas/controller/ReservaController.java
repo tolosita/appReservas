@@ -31,7 +31,7 @@ public class ReservaController {
         return reservaBusiness.obtenerValorHabitacionesDisponibles();
     }
 
-    @GetMapping("valorCamas")
+    @GetMapping("totalReservadas")
     public Double obtenerTotalHabitacionesReservadas(HttpServletResponse hsr) {
         return reservaBusiness.obtenerTotalHabitacionesReservadas();
     }

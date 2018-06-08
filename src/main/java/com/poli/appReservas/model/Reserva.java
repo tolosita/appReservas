@@ -13,35 +13,35 @@ import java.util.Objects;
  */
 public class Reserva {
 
-    private String IdReserva;
-    private String IdHabitacion;
+    private String idReserva;
+    private String idHabitacion;
     private Double numCamas;
     private Double precioXcama;
 
     public Reserva() {
     }
 
-    public Reserva(String IdReserva, String IdHabitacion, Double numCamas, Double precioXcama) {
-        this.IdReserva = IdReserva;
-        this.IdHabitacion = IdHabitacion;
+    public Reserva(String idReserva, String idHabitacion, Double numCamas, Double precioXcama) {
+        this.idReserva = idReserva;
+        this.idHabitacion = idHabitacion;
         this.numCamas = numCamas;
         this.precioXcama = precioXcama;
     }
 
     public String getIdReserva() {
-        return IdReserva;
+        return idReserva;
     }
 
-    public void setIdReserva(String IdReserva) {
-        this.IdReserva = IdReserva;
+    public void setIdReserva(String idReserva) {
+        this.idReserva = idReserva;
     }
 
     public String getIdHabitacion() {
-        return IdHabitacion;
+        return idHabitacion;
     }
 
-    public void setIdHabitacion(String IdHabitacion) {
-        this.IdHabitacion = IdHabitacion;
+    public void setIdHabitacion(String idHabitacion) {
+        this.idHabitacion = idHabitacion;
     }
 
     public Double getNumCamas() {
@@ -63,7 +63,7 @@ public class Reserva {
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 41 * hash + Objects.hashCode(this.IdReserva);
+        hash = 29 * hash + Objects.hashCode(this.idReserva);
         return hash;
     }
 
@@ -79,7 +79,7 @@ public class Reserva {
             return false;
         }
         final Reserva other = (Reserva) obj;
-        if (!Objects.equals(this.IdReserva, other.IdReserva)) {
+        if (!Objects.equals(this.idReserva, other.idReserva)) {
             return false;
         }
         return true;

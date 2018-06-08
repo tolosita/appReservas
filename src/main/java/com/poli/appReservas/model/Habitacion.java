@@ -13,25 +13,25 @@ import java.util.Objects;
  */
 public class Habitacion {
 
-    private String IdHabitacion;
+    private String idHabitacion;
     private String tipoHabitacion;
     private Double numCamas;
 
     public Habitacion() {
     }
 
-    public Habitacion(String IdHabitacion, String tipoHabitacion, Double numCamas) {
-        this.IdHabitacion = IdHabitacion;
+    public Habitacion(String idHabitacion, String tipoHabitacion, Double numCamas) {
+        this.idHabitacion = idHabitacion;
         this.tipoHabitacion = tipoHabitacion;
         this.numCamas = numCamas;
     }
 
     public String getIdHabitacion() {
-        return IdHabitacion;
+        return idHabitacion;
     }
 
-    public void setIdHabitacion(String IdHabitacion) {
-        this.IdHabitacion = IdHabitacion;
+    public void setIdHabitacion(String idHabitacion) {
+        this.idHabitacion = idHabitacion;
     }
 
     public String getTipoHabitacion() {
@@ -52,8 +52,8 @@ public class Habitacion {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 41 * hash + Objects.hashCode(this.IdHabitacion);
+        int hash = 5;
+        hash = 53 * hash + Objects.hashCode(this.idHabitacion);
         return hash;
     }
 
@@ -69,7 +69,7 @@ public class Habitacion {
             return false;
         }
         final Habitacion other = (Habitacion) obj;
-        if (!Objects.equals(this.IdHabitacion, other.IdHabitacion)) {
+        if (!Objects.equals(this.idHabitacion, other.idHabitacion)) {
             return false;
         }
         return true;
